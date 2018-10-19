@@ -2,8 +2,19 @@ $(window).scroll(function(){
 	if($(this).scrollTop() > 60){
 		$('nav').removeClass('bg-transparent')
 		$('nav').addClass('scrolled')	
-	}
+    }
+    else if($(this).scrollTop()<=60){
+        $('nav').removeClass('scrolled')
+		$('nav').addClass('bg-transparent')
+    }
 });
+
+// $(window).scroll(function(){
+// 	if($(this).scrollTop() > 60){
+// 		$('nav').toggleClass('bg-transparent')
+			
+// 	}
+// });
 
 let form = $('.form-contact');
 

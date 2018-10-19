@@ -1,29 +1,29 @@
-
-/*# sourceMappingURL=style.css.map */
-*{
-	box-sizing: border-box;
-	padding:0;
-}
-body{
-	font-family: 'Lato', sans-serif, Arial;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
 }
 
-h2{
-    text-align: left;
-    margin: 30px 0;
+body {
+  font-family: 'Lato', sans-serif, Arial;
+}
+
+h2 {
+  text-align: left;
+  margin: 30px 0;
 }
 
 /*NAVBAR*/
-.scrolled{
-	background-color: white;
+.scrolled {
+  background-color: white;
 }
-*/
-.pop-up-menu{
-    position: absolute;
-    top: 56px;
-    right: 0px;
-    z-index: 999;
-    margin-right: 50px;
+
+.pop-up-menu {
+  position: absolute;
+  top: 56px;
+  right: 0px;
+  z-index: 999;
+  margin-right: 50px;
 }
 
 /*CAROUSEL*/
@@ -33,48 +33,47 @@ h2{
     object-fit: cover;
 }
 */
-
 /*BANNER*/
-.banner img{
-	height: 100vh;
-	width: 100vw;
-	object-fit: cover;
-}
-.banner h2{
-	background-color: rgba(39, 38, 38, 0.5);
-	padding: 5px;
+.banner img {
+  height: 100vh;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-/*ABOUT*/
-.about-img{
-/*	position: absolute;*/
+.banner h2 {
+  background-color: rgba(39, 38, 38, 0.5);
+  padding: 5px;
 }
 
 /*SKILLS*/
-.progress{
-    margin-bottom: 15px;
-    height: 25px;
+.progress {
+  margin-bottom: 15px;
+  height: 25px;
 }
-.progress-bar{
-	font-size: 14px;
+
+.progress-bar {
+  font-size: 14px;
 }
 
 /*CONTACT*/
-span.error{
-    color: red;
-    font-size: 14px;
-    font-weight: bold;
+span.error {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
 }
+
 /* input.error, textarea.error{
     border-color: red;
 } */
+.contact-img {
+  background-image: url(../assets/access-adult-blur-261628.jpg);
+}
 
-.contact-img{
-	background-image: url(../assets/access-adult-blur-261628.jpg);	
+.banner-form {
+  background-image: url(../assets/access-adult-blur-261628.jpg);
+  background-size: cover;
+  background-position: 60%;
+  padding-bottom: 25px;
 }
-.banner-form{
-	background-image: url(../assets/access-adult-blur-261628.jpg);
-	background-size: cover;
-	background-position: 60%;
-	padding-bottom: 25px;
-}
+/*# sourceMappingURL=style.css.map */
