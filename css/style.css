@@ -1,5 +1,13 @@
 
 /*# sourceMappingURL=style.css.map */
+*{
+	box-sizing: border-box;
+	padding:0;
+}
+.scrolled{
+	background-color: white;
+	opacity: 0.9 
+}
 .pop-up-menu{
     position: absolute;
     top: 56px;
@@ -25,8 +33,16 @@ span.error{
     margin-bottom: 15px;
     height: 25px;
 }
+.progress-bar{
+	font-size: 18px;
+}
 
 h2{
-    text-align: center;
+    text-align: left;
     margin: 50px 0 30px;
+}
+.contact-img{
+	background-image: url(../assets/access-adult-blur-261628.jpg);
+	
+	
 }

@@ -1,3 +1,10 @@
+$(window).scroll(function(){
+	if($(this).scrollTop() > 60){
+		$('nav').removeClass('bg-transparent')
+		$('nav').addClass('scrolled')	
+	}
+});
+
 let form = $('.form-contact');
 
 form.validate({
@@ -21,3 +28,5 @@ form.validate({
         text: 'Please, type a message'
     }
 })
+
+
