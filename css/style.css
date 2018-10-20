@@ -31,10 +31,12 @@ h2 {
   object-fit: cover;
 }
 .carousel-caption {
-  top: 42%;
+  top: 46%;
   bottom: auto;
   padding: 0;
   background-color: rgba(76, 6, 94, 0.5);
+  margin: 0 auto;
+  max-width: 50%;
 }
 
 /*BANNER*/
