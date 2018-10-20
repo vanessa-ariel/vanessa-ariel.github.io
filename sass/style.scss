@@ -11,27 +11,28 @@ h2{
     margin: 30px 0;
 }
 
-/*NAVBAR*/
-.scrolled{
-	background-color: white;
+//NAVBAR
+nav{
+    &.scrolled{
+        background-color: white;
+    }
+    &.pop-up-menu{
+        position: absolute;
+        top: 56px;
+        right: 0px;
+        z-index: 999;
+        margin-right: 50px;
+    }
 }
 
-.pop-up-menu{
-    position: absolute;
-    top: 56px;
-    right: 0px;
-    z-index: 999;
-    margin-right: 50px;
-}
-
-/*CAROUSEL*/
+//CAROUSEL
 .carousel{
     &-item img{
         height: 100vh;
         object-fit: cover;
     }  
     &-caption{
-        top: 42%;
+        top: 46%;
         bottom: auto; 
         padding: 0;     
         background-color: rgba(76, 6, 94, 0.5);
@@ -40,44 +41,30 @@ h2{
     }
 }
 
-
-
-/*BANNER*/
-// .banner img{
-// 	height: 100vh;
-// 	width: 100vw;
-// 	object-fit: cover;
-// }
-// .banner h2{
-// 	background-color: rgba(39, 38, 38, 0.5);
-// 	padding: 5px;
-// }
-
-/*SKILLS*/
-.progress{
-    margin-bottom: 15px;
-    height: 25px;
-}
-.progress-bar{
-	font-size: 14px;
+//SKILLS
+.skills{
+    .progress{
+        margin-bottom: 15px;
+        height: 25px;
+        &-bar{
+            font-size: 14px;
+        }
+    }
 }
 
-/*CONTACT*/
-span.error{
-    color: red;
-    font-size: 14px;
-    font-weight: bold;
-}
-/* input.error, textarea.error{
-    border-color: red;
-} */
-
-.contact-img{
-	background-image: url(../assets/access-adult-blur-261628.jpg);	
-}
+// FORM
 .banner-form{
-	background-image: url(../assets/access-adult-blur-261628.jpg);
+    background-image: url(../assets/access-adult-blur-261628.jpg);
 	background-size: cover;
 	background-position: 60%;
 	padding-bottom: 25px;
+    span.error{
+        color: red;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    // input.error, textarea.error{
+    //     border-color: red;
+    // } 
 }
+

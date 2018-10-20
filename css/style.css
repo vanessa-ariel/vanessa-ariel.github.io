@@ -12,12 +12,10 @@ h2 {
   margin: 30px 0;
 }
 
-/*NAVBAR*/
-.scrolled {
+nav.scrolled {
   background-color: white;
 }
-
-.pop-up-menu {
+nav.pop-up-menu {
   position: absolute;
   top: 56px;
   right: 0px;
@@ -25,7 +23,6 @@ h2 {
   margin-right: 50px;
 }
 
-/*CAROUSEL*/
 .carousel-item img {
   height: 100vh;
   object-fit: cover;
@@ -39,29 +36,12 @@ h2 {
   max-width: 50%;
 }
 
-/*BANNER*/
-/*SKILLS*/
-.progress {
+.skills .progress {
   margin-bottom: 15px;
   height: 25px;
 }
-
-.progress-bar {
+.skills .progress-bar {
   font-size: 14px;
-}
-
-/*CONTACT*/
-span.error {
-  color: red;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-/* input.error, textarea.error{
-    border-color: red;
-} */
-.contact-img {
-  background-image: url(../assets/access-adult-blur-261628.jpg);
 }
 
 .banner-form {
@@ -69,6 +49,11 @@ span.error {
   background-size: cover;
   background-position: 60%;
   padding-bottom: 25px;
+}
+.banner-form span.error {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
