@@ -25,23 +25,31 @@ h2{
 }
 
 /*CAROUSEL*/
-/*
-.carousel-item{
-    height: 100vh;
-    object-fit: cover;
+.carousel{
+    &-item img{
+        height: 100vh;
+        object-fit: cover;
+    }
+    &-caption{
+        top: 42%;
+        bottom: auto; 
+        padding: 0;     
+        background-color: rgba(76, 6, 94, 0.5);
+    }
 }
-*/
+
+
 
 /*BANNER*/
-.banner img{
-	height: 100vh;
-	width: 100vw;
-	object-fit: cover;
-}
-.banner h2{
-	background-color: rgba(39, 38, 38, 0.5);
-	padding: 5px;
-}
+// .banner img{
+// 	height: 100vh;
+// 	width: 100vw;
+// 	object-fit: cover;
+// }
+// .banner h2{
+// 	background-color: rgba(39, 38, 38, 0.5);
+// 	padding: 5px;
+// }
 
 /*SKILLS*/
 .progress{
