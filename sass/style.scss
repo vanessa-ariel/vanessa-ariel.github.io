@@ -16,12 +16,15 @@ nav{
     &.scrolled{
         background-color: white;
     }
-    &.pop-up-menu{
+    .pop-up-menu{
         position: absolute;
         top: 56px;
         right: 0px;
         z-index: 999;
         margin-right: 50px;
+        .navbar-nav{
+            margin: 10px 50px;
+        }
     }
 }
 

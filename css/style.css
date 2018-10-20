@@ -15,12 +15,15 @@ h2 {
 nav.scrolled {
   background-color: white;
 }
-nav.pop-up-menu {
+nav .pop-up-menu {
   position: absolute;
   top: 56px;
   right: 0px;
   z-index: 999;
   margin-right: 50px;
+}
+nav .pop-up-menu .navbar-nav {
+  margin: 10px 50px;
 }
 
 .carousel-item img {
