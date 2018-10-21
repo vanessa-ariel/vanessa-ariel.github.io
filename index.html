@@ -20,15 +20,21 @@
 </head>
 <body>
     <!-- NAVBAR -->
-    <nav class="fixed-top navbar navbar-light bg-transparent">
+    <nav id="navbar"class="fixed-top navbar navbar-light bg-transparent">
         <div class="container">
-            <a class="navbar-brand" href="#">Vanessa Ariel</a>
+            <a class="navbar-brand" href="#navbar">Vanessa Ariel</a>
             <div class="position-relative">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <!-- SUBMENU -->
-                <div class="pop-up-menu collapse navbar-collapse bg-light text-dark m-0 " id="navbarNav">
+                <div class="dropdown">
+                    <button class="dropbtn navbar-toggler-icon "></button>
+                    <div class="dropdown-content">
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <!-- <div class="pop-up-menu collapse navbar-collapse bg-light text-dark m-0 " id="navbarNav">
                         <ul class="navbar-nav  flex-column text-right">
                             <li class="nav-item">
                                 <a class="nav-link" href="#about">About</a>
@@ -44,7 +50,7 @@
                             </li>
                         </ul>
                     </div>
-            </div>
+            </div> -->
         </div>
     </nav>
     
@@ -151,8 +157,8 @@
             <div class="row no-gutters justify-content-center">
                 <div class="col-lg-8">        
                     <div class="elements-hover">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <!-- <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>               
                     <img class="img-project" src="assets/mundo-gelado.png" alt="">
@@ -161,17 +167,17 @@
             <div class="row no-gutters justify-content-center">
                 <div class="col-lg-4">        
                     <div class="elements-hover">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <!-- <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                        <a href="https://github.com/vanessa-ariel/project-2-to-do-list" class="btn btn-primary">Go somewhere</a>
                     </div>               
                     <img class="img-project" src="assets/to-do-list.png" alt="">
                 </div>
                 <div class="col-lg-4">        
                     <div class="elements-hover">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <!-- <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                        <a href="https://github.com/vanessa-ariel/projeto-1_m-de-maravilhosa" class="btn btn-primary">Go somewhere</a>
                     </div>               
                     <img class="img-project" src="assets/m-de-maravilhosa-small.png" alt="">
                 </div>
