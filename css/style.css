@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  padding: 0;
 }
 
 body {
@@ -16,6 +15,7 @@ nav.scrolled {
   background-color: white;
 }
 nav .pop-up-menu {
+  display: none;
   position: absolute;
   top: 56px;
   right: 0px;
@@ -54,20 +54,33 @@ nav .pop-up-menu .navbar-nav .nav-item:hover {
   background-color: #DBCCEC;
 }
 
-.projects .mundo-gelado {
-  background-image: url("../assets/mundo-gelado.png");
-  background-size: cover;
-  height: 300px;
+.projects {
+  padding-bottom: 50px;
+}
+.projects .container {
+  margin: 0 auto;
+}
+.projects .container .col-lg-8 {
+  position: relative;
+}
+.projects .container .elements-hover {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  background-color: rgba(0, 0, 0, 0.9);
 }
-.projects .mundo-gelado .card-title, .projects .mundo-gelado .card-text, .projects .mundo-gelado a {
-  visibility: hidden;
+.projects .container .img-project {
+  max-width: 100%;
 }
-.projects .mundo-gelado .card-title:hover, .projects .mundo-gelado .card-text:hover, .projects .mundo-gelado a:hover {
-  visibility: visible;
+.projects .container .img-project:hover {
+  opacity: 0.5;
 }
 
 .banner-form {
@@ -83,6 +96,13 @@ nav .pop-up-menu .navbar-nav .nav-item:hover {
   color: red;
   font-size: 14px;
   font-weight: bold;
+}
+
+.footer {
+  padding: 25px;
+}
+.footer .github-icon {
+  height: 28px;
 }
 
 /*# sourceMappingURL=style.css.map */

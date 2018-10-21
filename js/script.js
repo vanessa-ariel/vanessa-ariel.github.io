@@ -16,6 +16,14 @@ $(window).scroll(function(){
 // 	}
 // });
 
+
+
+// $('.nav-item').click(function(event){
+//     event.preventDefault();
+//     if
+// })
+
+
 let form = $('.form-contact');
 
 form.validate({

@@ -16,6 +16,7 @@ nav{
         background-color: white;
     }
     .pop-up-menu{
+        display: none;
         position: absolute;
         top: 56px;
         right: 0px;
@@ -63,21 +64,33 @@ nav{
 
 // PROJECTS
 .projects{
-    .mundo-gelado{
-        background-image: url("../assets/mundo-gelado.png");
-        background-size: cover;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-        .card-title , .card-text , a {
-            visibility: hidden;
-            &:hover {
-                visibility: visible;
+    padding-bottom: 50px;
+    .container{
+        margin: 0 auto;
+        .col-lg-8{
+            position: relative;
+        }
+        .elements-hover{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            opacity: 0;
+            transition: all 0.5s;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .img-project{
+            max-width: 100%;
+            &:hover{
+                opacity: 0.5;
             }
         }
-    }
+    }    
+    
 }
 
 // FORM
@@ -99,3 +112,11 @@ nav{
     // } 
 }
 
+// FOOTER
+.footer{
+    padding: 25px;
+
+    .github-icon{
+        height: 28px;
+    }
+}
