@@ -9,6 +9,9 @@ h2{
     text-align: left;
     margin: 30px 0;
 }
+p:hover{
+    background-color: red;
+}
 
 //NAVBAR
 nav{
@@ -128,7 +131,6 @@ nav{
 /*************************************
 ********Hover dropdown***************/
 
-/* Dropdown Button */
 .dropbtn {
     color: white;
     padding: 16px;
@@ -139,13 +141,11 @@ nav{
     }
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -156,7 +156,6 @@ nav{
     text-align: center;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -164,11 +163,8 @@ nav{
     display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: rgba(235, 235, 235, 0.5);}
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: rgba(97, 94, 94, 0.5);}
