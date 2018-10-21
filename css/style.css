@@ -15,7 +15,6 @@ nav.scrolled {
   background-color: white;
 }
 nav .pop-up-menu {
-  display: none;
   position: absolute;
   top: 56px;
   right: 0px;
@@ -55,7 +54,7 @@ nav .pop-up-menu .navbar-nav .nav-item:hover {
 }
 
 .projects {
-  padding-bottom: 50px;
+  padding-bottom: 50px 0;
 }
 .projects .container {
   margin: 0 auto;
