@@ -23,7 +23,12 @@ nav{
         z-index: 999;
         margin-right: 50px;
         .navbar-nav{
-            margin: 10px 50px;
+            .nav-item{
+                padding: 0 50px;
+                &:hover{
+                    background-color: rgba(165, 165, 165, 0.25);
+                }
+            }
         }
     }
 }
@@ -46,11 +51,32 @@ nav{
 
 //SKILLS
 .skills{
+    padding: 10px 0 50px;
     .progress{
         margin-bottom: 15px;
         height: 25px;
         &-bar{
             font-size: 14px;
+            background-color: #DBCCEC;
+        }
+    }
+}
+
+// PROJECTS
+.projects{
+    .mundo-gelado{
+        background-image: url("../assets/mundo-gelado.png");
+        background-size: cover;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        .card-title , .card-text , a {
+            visibility: hidden;
+            &:hover {
+                visibility: visible;
+            }
         }
     }
 }
@@ -60,7 +86,10 @@ nav{
     background-image: url(../assets/access-adult-blur-261628.jpg);
 	background-size: cover;
 	background-position: 60%;
-	padding-bottom: 25px;
+    padding-bottom: 25px;
+    &-content{
+        margin-top: 5vh;
+    }
     span.error{
         color: red;
         font-size: 14px;

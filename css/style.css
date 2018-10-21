@@ -22,8 +22,11 @@ nav .pop-up-menu {
   z-index: 999;
   margin-right: 50px;
 }
-nav .pop-up-menu .navbar-nav {
-  margin: 10px 50px;
+nav .pop-up-menu .navbar-nav .nav-item {
+  padding: 0 50px;
+}
+nav .pop-up-menu .navbar-nav .nav-item:hover {
+  background-color: rgba(165, 165, 165, 0.25);
 }
 
 .carousel-item img {
@@ -39,12 +42,32 @@ nav .pop-up-menu .navbar-nav {
   max-width: 50%;
 }
 
+.skills {
+  padding: 10px 0 50px;
+}
 .skills .progress {
   margin-bottom: 15px;
   height: 25px;
 }
 .skills .progress-bar {
   font-size: 14px;
+  background-color: #DBCCEC;
+}
+
+.projects .mundo-gelado {
+  background-image: url("../assets/mundo-gelado.png");
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.projects .mundo-gelado .card-title, .projects .mundo-gelado .card-text, .projects .mundo-gelado a {
+  visibility: hidden;
+}
+.projects .mundo-gelado .card-title:hover, .projects .mundo-gelado .card-text:hover, .projects .mundo-gelado a:hover {
+  visibility: visible;
 }
 
 .banner-form {
@@ -52,6 +75,9 @@ nav .pop-up-menu .navbar-nav {
   background-size: cover;
   background-position: 60%;
   padding-bottom: 25px;
+}
+.banner-form-content {
+  margin-top: 5vh;
 }
 .banner-form span.error {
   color: red;

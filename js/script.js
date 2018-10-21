@@ -1,9 +1,9 @@
 $(window).scroll(function(){
-	if($(this).scrollTop() > 60){
+	if($(this).scrollTop() > 100){
 		$('nav').removeClass('bg-transparent')
 		$('nav').addClass('scrolled')	
     }
-    else if($(this).scrollTop()<=60){
+    else if($(this).scrollTop()<= 100){
         $('nav').removeClass('scrolled')
 		$('nav').addClass('bg-transparent')
     }
