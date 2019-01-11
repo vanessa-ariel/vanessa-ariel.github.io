@@ -9,14 +9,12 @@ h2{
     text-align: left;
     margin: 30px 0;
 }
-p:hover{
-    background-color: red;
-}
 
 //NAVBAR
 nav{
     &.scrolled{
         background-color: white;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     }
     .pop-up-menu{
         position: absolute;
@@ -40,11 +38,11 @@ nav{
     &-item img{
         height: 100vh;
         object-fit: cover;
-    }  
+    }
     &-caption{
         top: 46%;
-        bottom: auto; 
-        padding: 5px 0;     
+        bottom: auto;
+        padding: 5px 0;
         background-color: rgba(49, 48, 49, 0.5);
         margin: 0 auto;
         max-width: 50%;
@@ -55,14 +53,19 @@ nav{
 //SKILLS
 .skills{
     padding: 10px 0 50px;
-    .progress{
-        margin-bottom: 15px;
-        height: 25px;
-        &-bar{
-            font-size: 14px;
-            background-color: #DBCCEC;
-        }
-    }
+}
+.progress{
+	margin-bottom: 15px;
+	height: 25px;
+	border-radius: 10px;
+	position: relative;
+		&-bar{
+				font-size: 14px;
+				span{
+					position: absolute;
+					width: 100%;
+				}
+		}
 }
 
 // PROJECTS
@@ -70,34 +73,61 @@ nav{
     padding-bottom: 50px 0;
     .container{
         margin: 0 auto;
-        .col-lg-8{
-            position: relative;
-        }
-        .elements-hover{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 100%;
-            opacity: 0;
-            transition: all 0.5s;
-            background-color: rgba(0, 0, 0, 0.9);
-            a{
-                height: 100%;
-                width: 100%;
-            }
-        }
-        .img-project{
-            max-width: 100%;
-            &:hover{
-                opacity: 0.5;
-            }
-        }
-    }    
-    
+    }
+		// &-row{
+		// 	margin-bottom: 100px;
+		// }
+		&-box{
+			margin: 0 auto;
+			position: relative;
+			margin-bottom: 50px;
+			&:hover{
+					transform: scale(1.15);
+					transition: 0.5s ease;
+			}
+		}
+		&-img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 25px;
+			box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.35);
+		}
+		&-btn{
+			text-decoration: none;
+			border-radius: 10px;
+			padding: 4px 15px;
+			margin-bottom: 10px;
+			background-color: white;
+			color: black;
+			&:hover{
+				text-decoration: none;
+				color: white;
+				background-color: rgba(18, 226, 202, 0.9);
+			}
+		}
+		&-description{
+			color: white;
+			text-align: center;
+		}
+		&-overlay{
+			position: absolute;
+		  top: 0;
+		  left: 0;
+		  opacity: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 25px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			&:hover{
+				opacity: 1;
+				background-color: rgba(56, 56, 56, 0.90);
+				transition: 0.5s ease;
+			}
+		}
 }
 
 // FORM
@@ -116,7 +146,7 @@ nav{
     }
     // input.error, textarea.error{
     //     border-color: red;
-    // } 
+    // }
 }
 
 // FOOTER
