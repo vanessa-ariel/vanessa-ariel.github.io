@@ -5,6 +5,7 @@ body{
 	font-family: 'Lato', sans-serif, Arial;
 }
 
+// ABOUT
 h2{
     text-align: left;
     margin: 30px 0;
@@ -13,7 +14,7 @@ h2{
 //NAVBAR
 nav{
     &.scrolled{
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.9);
 				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     }
     .pop-up-menu{
@@ -33,21 +34,19 @@ nav{
     }
 }
 
-//CAROUSEL
-.carousel{
-    &-item img{
-        height: 100vh;
-        object-fit: cover;
-    }
-    &-caption{
-        top: 46%;
-        bottom: auto;
-        padding: 5px 0;
-        background-color: rgba(49, 48, 49, 0.5);
-        margin: 0 auto;
-        max-width: 50%;
-        border-radius: 5px;
-    }
+// ABOUT
+.about{
+    height: 50vh;
+    // background-color:#ce3635;
+    background-image: url('../assets/ballpen-blur-close-up-461077.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.typewrite{
+    color:#000; 
+    text-decoration: none;
 }
 
 //SKILLS
@@ -80,7 +79,8 @@ nav{
 		&-box{
 			margin: 0 auto;
 			position: relative;
-			margin-bottom: 50px;
+            margin-bottom: 50px;
+            max-width: 90%;
 			&:hover{
 					transform: scale(1.15);
 					transition: 0.5s ease;
@@ -179,10 +179,10 @@ nav{
 .dropdown-content {
     display: none;
     position: absolute;
-    min-width: 160px;
+    min-width: 125px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    right: 0px;
+    left: 0px;
     text-align: center;
 }
 
