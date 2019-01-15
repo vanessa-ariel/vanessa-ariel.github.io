@@ -8,14 +8,14 @@ body{
 // ABOUT
 h2{
     text-align: left;
-    margin: 30px 0;
+    margin: 50px 0;
 }
 
 //NAVBAR
 nav{
     &.scrolled{
         background-color: rgba(255, 255, 255, 0.9);
-				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     }
     .pop-up-menu{
         position: absolute;
@@ -34,11 +34,11 @@ nav{
     }
 }
 
-// ABOUT
-.about{
-    height: 50vh;
+// BANNER
+.banner{
+    height: 100vh;
     // background-color:#ce3635;
-    background-image: url('../assets/ballpen-blur-close-up-461077.jpg');
+    background-image: url('../assets/clouds-cloudy-cold-167699.jpg');
     background-size: cover;
     display: flex;
     align-items: center;
@@ -47,6 +47,13 @@ nav{
 .typewrite{
     color:#000; 
     text-decoration: none;
+    // background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+// ABOUT
+.about{
+    padding: 10px 0 50px;
 }
 
 //SKILLS
@@ -63,7 +70,7 @@ nav{
 				span{
 					position: absolute;
 					width: 100%;
-				}
+                }
 		}
 }
 
@@ -90,7 +97,7 @@ nav{
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-			border-radius: 25px;
+			// border-radius: 25px;
 			box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.35);
 		}
 		&-btn{
@@ -108,16 +115,17 @@ nav{
 		}
 		&-description{
 			color: white;
-			text-align: center;
+            text-align: center;
+            max-width: 90%;
 		}
 		&-overlay{
-			position: absolute;
-		  top: 0;
-		  left: 0;
-		  opacity: 0;
+		    position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
 			width: 100%;
 			height: 100%;
-			border-radius: 25px;
+			// border-radius: 25px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
